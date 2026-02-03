@@ -1,0 +1,92 @@
+/* ===================================
+   SISTEMA DE VARIABLES CSS
+   Tema: IndustrialEdge - Monitoring & Ops
+   =================================== */
+
+:root {
+    /* --- BRANDING & CORE PALETTE --- */
+    --primary-color: #0ea5e9;
+    /* Sky 500 - Operational blue */
+    --primary-hover: #0284c7;
+    --secondary-color: #64748b;
+    /* Slate 500 - Supportive neutral */
+    --accent-color: #f59e0b;
+    /* Amber 500 - Warning/Alerts */
+    --success-color: #10b981;
+    /* Emerald 500 - Normal status */
+    --danger-color: #ef4444;
+    /* Red 500 - Critical status */
+
+    /* --- BACKGROUNDS --- */
+    --bg-main: #f8fafc;
+    /* Slate 50 - Clean workspace */
+    --bg-surface: #ffffff;
+    --bg-surface-alt: #f1f5f9;
+    /* Slate 100 */
+
+    /* --- TEXT --- */
+    --text-main: #0f172a;
+    /* Slate 900 - High contrast */
+    --text-muted: #475569;
+    /* Slate 600 */
+    --text-on-primary: #ffffff;
+
+    /* --- BORDERS & INTERFACES --- */
+    --border-base: #e2e8f0;
+    /* Slate 200 */
+    --border-focus: var(--primary-color);
+    --input-bg: #ffffff;
+
+    /* --- INTERACTIVE STATES --- */
+    --state-hover-bg: rgba(14, 165, 233, 0.08);
+    --state-disabled-bg: #f1f5f9;
+    --state-disabled-text: #94a3b8;
+
+    /* --- SHADOWS --- */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    /* --- RADIUS --- */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+}
+
+[data-theme="dark"] {
+    /* --- BRANDING & CORE PALETTE --- */
+    --primary-color: #38bdf8;
+    /* Sky 400 - Better visibility on dark */
+    --primary-hover: #7dd3fc;
+    --secondary-color: #94a3b8;
+
+    /* --- BACKGROUNDS --- */
+    --bg-main: #020617;
+    /* Slate 950 - Deep operational space */
+    --bg-surface: #0f172a;
+    /* Slate 900 */
+    --bg-surface-alt: #1e293b;
+    /* Slate 800 */
+
+    /* --- TEXT --- */
+    --text-main: #f8fafc;
+    /* Slate 50 */
+    --text-muted: #94a3b8;
+    /* Slate 400 */
+    --text-on-primary: #020617;
+
+    /* --- BORDERS & INTERFACES --- */
+    --border-base: #1e293b;
+    /* Slate 800 */
+    --input-bg: #1e293b;
+
+    /* --- INTERACTIVE STATES --- */
+    --state-hover-bg: rgba(56, 189, 248, 0.12);
+    --state-disabled-bg: #1e293b;
+    --state-disabled-text: #64748b;
+
+    /* --- SHADOWS --- */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+}

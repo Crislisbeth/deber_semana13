@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndustrialEdge | Operational Control</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">⚙️ IndustrialEdge</h1>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Dashboard</a>
+                <a href="#" class="nav-link">Inventario</a>
+                <a href="#" class="nav-link">Reportes</a>
+                <a href="#" class="nav-link">Configuración</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                🌙
+            </button>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container main-content">
+
+        <!-- SECCIÓN DE BIENVENIDA -->
+        <section class="welcome-section">
+            <h2>Panel de Control Operativo</h2>
+            <p>Monitoreo en tiempo real de activos industriales y métricas de rendimiento logístico.</p>
+        </section>
+
+        <!-- TARJETAS DE ACTIVOS -->
+        <section class="cards-section">
+            <h3>Estado de Activos</h3>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🏗️</span>
+                        <span class="card-status status-active">Operativo</span>
+                    </div>
+                    <h4>Grúa Torre CT-450</h4>
+                    <p class="card-description">
+                        Ubicación: Sector Norte. Carga actual: 12.5 T. Temperatura motor: Normal.
+                    </p>
+                    <button class="btn btn-primary">Ver Detalles</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🚛</span>
+                        <span class="card-status status-warning">Mantenimiento</span>
+                    </div>
+                    <h4>Camión de Carga H-12</h4>
+                    <p class="card-description">
+                        Próxima revisión en 48 horas. Sensor de presión neumática requiere ajuste.
+                    </p>
+                    <button class="btn btn-primary">Ver Detalles</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">⚡</span>
+                        <span class="card-status status-active">Eficiente</span>
+                    </div>
+                    <h4>Generador Auxiliar G-33</h4>
+                    <p class="card-description">
+                        Consumo óptimo. Combustible al 85%. Autonomía estimada: 140 horas.
+                    </p>
+                    <button class="btn btn-primary">Ver Detalles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE GESTIÓN -->
+        <section class="form-section">
+            <h3>Registro de Nuevo Activo</h3>
+            <form class="demo-form">
+                <div class="form-group">
+                    <label for="asset-id">ID de Activo</label>
+                    <input type="text" id="asset-id" class="form-input" placeholder="Ej: LOG-992-TX">
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Categoría</label>
+                    <select id="category" class="form-input">
+                        <option>Maquinaria Pesada</option>
+                        <option>Vehículos</option>
+                        <option>Generación de Energía</option>
+                        <option>Sistemas TI</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripción Técnica</label>
+                    <textarea id="description" class="form-input" placeholder="Especificaciones, marca y modelo..."
+                        rows="3"></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary">Registrar Activo</button>
+                    <button type="button" class="btn btn-secondary">Exportar PDF</button>
+                    <button type="button" class="btn btn-disabled" disabled>Bloqueado</button>
+                </div>
+            </form>
+
+            <!-- ALERTA DENTRO DEL FORM -->
+            <div class="alert alert-warning">
+                <strong>⚠️ Aviso Crítico:</strong> Los campos con ID duplicado serán rechazados automáticamente por el
+                sistema central.
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/theme-switcher.js"></script>
+</body>
+
+</html>
